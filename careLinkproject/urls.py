@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 from . import settings
 
 urlpatterns = [
-    path('', RedirectView.as_view(url='example/')),
+    # path('', RedirectView.as_view(url='example/')),
     path('admin/', admin.site.urls),
     path('' , include('carelinkapp.urls'))
 ]
